@@ -40,7 +40,7 @@ if ingredient_list:
        # st.write('The Search value for ',fruit_choosen,' is ', search_on,'.')
                  
         st.subheader(fruit_choosen + ' Nutrition Information')
-        fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+ SEARCH_ON)
+        fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+ search_on)
         fv_df=st.dataframe(data =fruityvice_response.json(),use_container_width=True)
 
 
